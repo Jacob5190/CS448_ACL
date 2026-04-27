@@ -20,6 +20,11 @@ pip install --upgrade pip
 pip install streamlit librosa matplotlib scikit-learn numpy scipy
 ```
 
+### Start the Program
+```bash
+streamlit run app.py
+```
+
 ## Architecture
 The system is divided into two primary modules:
 
