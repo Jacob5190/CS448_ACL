@@ -254,7 +254,7 @@ def _infer_intended_pattern(segment_seq, best_lag):
         if segment_seq[i] > 0:
             template[i % best_lag] += 1
             
-    threshold = max(1, 0.55 * num_folds)
+    threshold = max(1, 0.4 * num_folds)
     return (template >= threshold).astype(int)
 
 def _generate_master_grid(quantized_sequence, sixteenth_grid, segments):
